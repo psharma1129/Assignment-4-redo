@@ -58,24 +58,7 @@ public class Controller implements Initializable {
     @FXML
     private Spinner<Vulnerability> spinner1;
 
-    @FXML
-    public void sendDataToSecond(ActionEvent e) throws IOException
-    {
-        // Get the currently selected Movie object from the TableView
-        horror_character hc = CharacterListView.getSelectionModel().getSelectedItem();
 
-        // Load the FXML file for the secondary scene
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Gui2.fxml"));
-        root = loader.load();
-        SecondController sc = loader.getController();
-        sc.initData(hc,this);
-
-
-        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
 
     ArrayList<String> StringList = new ArrayList<>();
     ObservableList<Vulnerability> vuln = FXCollections.observableArrayList(Vulnerability.values());

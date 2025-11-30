@@ -15,13 +15,7 @@ public class Application extends javafx.application.Application {
         stage.setScene(scene);
         stage.show();
     }
-    public void update(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("Gui2.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Horror Character update");
-        stage.setScene(scene);
-        stage.show();
-    }
+
 
     public static void main(String[] args) {
         launch();

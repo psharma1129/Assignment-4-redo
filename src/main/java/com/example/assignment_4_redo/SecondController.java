@@ -39,11 +39,11 @@ public class SecondController {
             String newName = txtName.getText();
             if (newName != null && !newName.trim().isEmpty()) {
                 character.setName(newName.trim());
-                // ensure main list refreshes to reflect name change
+
                 if (mainController != null) mainController.refreshList();
             }
         }
-        // close the dialog
+
         Stage stage = (Stage) btnSave.getScene().getWindow();
         stage.close();
     }
