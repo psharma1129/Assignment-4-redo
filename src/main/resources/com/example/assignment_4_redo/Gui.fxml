@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Replace file: src/main/resources/com/example/demo2/gui.fxml -->
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment_4_redo.Controller">
+    <children>
+        <HBox layoutX="10.0" layoutY="10.0" prefWidth="580.0" spacing="20.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefWidth="180.0" spacing="10.0">
+                    <children>
+                        <Label text="Please choose one of the following" />
+                        <Button fx:id="btnCreate" mnemonicParsing="false" onAction="#addButtonClicked" text="Create" />
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#updateButtonClicked" text="Update" />
+                       <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteButtonClicked" text="Delete" />
+                        <Label text="Select Subtype" />
+                        <ComboBox fx:id="combo1" prefWidth="150.0" />
+                        <Label text="Assign Vulnerability" />
+                        <Spinner fx:id="spinner1" />
+                  <DatePicker fx:id="DOBid" onAction="#getDate" promptText="Enter A Date" />
+                  <Label fx:id="txtDate" text="Label" />
+                    </children>
+                    <padding>
+                        <Insets top="10.0" />
+                    </padding>
+                </VBox>
+
+                <VBox prefWidth="380.0" spacing="8.0">
+                    <children>
+                        <HBox spacing="8.0">
+                            <Label minWidth="60.0" text="Name:" />
+                            <TextField fx:id="txtCharacterName" prefWidth="280.0" />
+                        </HBox>
+                        <HBox spacing="8.0" />
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <CheckBox fx:id="chkTransformation" text="Transformed" />
+                        </HBox>
+                        <ListView fx:id="CharacterListView" prefHeight="280.0" prefWidth="360.0" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

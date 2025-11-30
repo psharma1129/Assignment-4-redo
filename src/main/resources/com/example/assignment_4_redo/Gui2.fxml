@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.assignment_4_redo.SecondController"
+            prefHeight="400.0" prefWidth="600.0">
+<children>
+    <VBox alignment="CENTER" spacing="10.0" AnchorPane.topAnchor="10.0" AnchorPane.bottomAnchor="10.0"
+          AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <children>
+            <Label text="Update Character Name" />
+            <TextField fx:id="txtName" promptText="Enter new name" prefWidth="300.0"/>
+            <HBox alignment="CENTER" spacing="10.0">
+                <children>
+                    <Button fx:id="btnSave" text="Save" onAction="#onSave" />
+                </children>
+            </HBox>
+        </children>
+    </VBox>
+</children>
+</AnchorPane>
